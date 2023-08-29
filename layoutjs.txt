@@ -1,0 +1,85 @@
+const layo=document.getElementById("layout");
+const layout=new dhx.Layout("layout",{
+    type:"none",
+    rows:[
+        {
+        id:"R1",
+        html:"<div id='header'></div>",
+        height:"130",
+        css:"lay1",
+        },
+        {
+            id:"R2",
+            html:"<div id='B1'></div>",
+           height:"content"
+        }
+    ]
+})
+
+const header=document.getElementById('header');
+header.innerHTML=`<div id='head'>
+<h1>Profile Verification Services<h1>
+<div id='tab'><div>
+</div>`;
+
+const tab=new dhx.Tabbar("tab",{
+    css:"tabone",
+    tabAlign: "center",
+    height:"auto",
+    views:[
+        {id:"home", tab: "Home" },
+        { id:"login", tab: "Login" },
+        { id:"registration", tab: "Registration" },
+        { id:"aboutus",tab: "About Us" },
+    ]
+});
+tab.events.on("change", function(id, prev){
+    console.log(id);
+    AddWidgets(id);
+  });
+
+  window.onscroll = function() {myFunction()};
+    function observe() {        
+  var header1 = document.getElementById("head");
+  
+  if(header1){
+    var sticky = header1.offsetTop;
+    console.log("hi");
+  }
+  else{
+    setTimeout(observe,100);
+  }
+    }
+    observe();
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+
+  const B1=document.getElementById('B1');
+  B1.style.backgroundColor="#9cadd7";
+  B1.style.border="2px solid #000";
+  B1.style.margin="12px";
+B1.innerHTML=`<h1> IDENTITY VERIFICATION<br><br>
+TO ACCELERATE TRUST<br><br>
+WORLDWIDE</h1>
+<p>Unleash the power of AI-driven identity verification solutions that
+ surpass traditional KYC & AML checks to boost conversions by deterring fraud and ensuring global compliance.</p>
+`;
+
+
+  function AddWidgets(id) {
+    const layout1Content = document.getElementById('B1');
+    //const layout1cont=layout1Content;
+    
+    if (id === "login") {
+      layout1Content.innerHTML = `<h1>Login Form</h1>`;
+    } else if (id === "registration") {
+      layout1Content.innerHTML = `<h1>Registration Form</h1>`;
+    } else if (id === "home") {
+      location.reload();
+    }
+  }

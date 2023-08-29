@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#head{
+    height: 100px;
+}
+
+#head h1{
+    font-size: 40px;
+    color: #f6f4f4;
+    text-align: center; 
+}
+
+#head h2{
+    color: #dddbdb; 
+    text-align: right;
+  }
+
+.tabone{
+    background-color: #24095e;
+    color: #f6f4f4;
+    text-decoration-color: #f6f4f4;
+}
+
+.tabone .dhx_button__text{
+    color: #f6f4f4;
+}
+
+.lay1{
+    background-color: #24095e;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .dhx_widget.dhx_layout.dhx_layout-rows{
+    overflow-y: scroll ;
+    }
+    /* color: #dae3f9; */
+ /* #layout{
+    overflow-y: scroll ;
+ } */
+
+ .dhx_widget.dhx_layout.dhx_layout-rows.dhx_widget--bg_white.dhx_widget--bordered.dhx_form{
+    overflow-y: hidden;
+ }
+ .dhx_widget.dhx_layout.dhx_layout-rows.dhx_layout-space{
+    overflow-y: hidden;
+ }
+
+  .box {
+   
+    padding: 60px 190px;
+    width: auto;
+    /* margin-left: 120px;
+  margin-right: 120px; */
+      margin-top: 18px;
+    background-color: #d8eafc;
+    box-shadow:0px 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center content */
+  }
+
+  .content {
+    flex: 1; /* Take up remaining space */
+  }
+
+  .image {
+    flex-shrink: 0; 
+    margin-left: 20px; 
+  }
+
+.B2,.B3{
+margin-top: 80px;
+}
+
+#BC1,
+#BC2,#BC3 ,#BC4, #B3C11,#B3C22,#B3C33,#B3C44
+ {
+    background-color: #d8eafc; /* Apply desired text color to the columns */
+    margin-right: 12px;
+    margin-left: 35px;
+    margin-bottom: 17px;
+    margin-top: 10px;
+    box-shadow:0px 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+
+}
+
+.pa{
+    padding: 30px;
+    text-align: center;
+    margin:0;
+    font-weight: bold;
+}
+#loginform, #registrationform  {
+    display: flex;
+    justify-content: center; /* Horizontally center items */
+    align-items: center;
+  }
+  
+  /* Style form labels */
+  .dhxform-group-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style input fields */
+  .dhx_input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Style validation messages */
+  .dhx-validation-message {
+    font-size: 14px;
+    color: #d9534f;
+    margin-top: 5px;
+  }
+  
+  /* Style success messages */
+  .dhx-validation-success {
+    font-size: 14px;
+    color: #5cb85c;
+    margin-top: 5px;
+  }
+  
+  /* Style checkbox label */
+  .dhx_checkbox_label {
+    font-size: 14px;
+  }
+  
+  /* Style submit button */
+  .dhx-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for submit button */
+  .dhx-button:hover {
+    background-color: #0056b3;
+  }
+  .char{
+    height: auto;
+  }
+  

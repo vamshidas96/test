@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#head{
+    height: 100px;
+}
+
+#head h1{
+    font-size: 40px;
+    color: #f6f4f4;
+    text-align: center; 
+}
+
+.tabone{
+    background-color: #24095e;
+    color: #f6f4f4;
+    text-decoration-color: #f6f4f4;
+}
+
+.tabone .dhx_button__text{
+    color: #f6f4f4;
+}
+
+.lay1{
+    background-color: #24095e;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .dhx_widget.dhx_layout.dhx_layout-rows{
+    overflow-y: scroll ;
+    /* color: #9cadd7; */
+  }
