@@ -246,7 +246,7 @@ B3C44.innerHTML=`<div class="pa">
 <h4>Achieve 99% accuracy with<br>
 10,000+ ID types, 150<br>
 languages, and 230+ countries</h4>
-<img src="pic4.jpg" alt="logo" style="border-radius:8px"; >
+<img src="pic4.jpg" alt="logo" style="border-radius:8px"; width="auto">
 
 </div>
 `;
