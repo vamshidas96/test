@@ -72,8 +72,13 @@ margin-right: 120px; */
   flex: 1; /* Take up remaining space */
 }
 
-.content h1{
+.heading-container {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   line-height: 1.5;
+   
+  overflow: hidden;
 }
 
 .image {
