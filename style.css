@@ -76,11 +76,10 @@ margin-right: 120px; */
   font-size: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
-  line-height: 1.5;
-   
+  line-height: 1.1;
+   font-weight: bold;
   overflow: hidden;
 }
-
 .image {
   flex-shrink: 0; 
   margin-left: 20px; 
