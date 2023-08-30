@@ -98,70 +98,39 @@ if(sessionStorage.getItem("username")==="admin"){
   
   const BR1=document.getElementById("B2");
   BR1.innerHTML=`<div class="B2">
-  <h1 style="text-align:center";>DRIVING TRUST GLOBALLY WITH SHUFTI PRO</h1>
+  <h1 style="text-align:center";>Growth of Clients</h1>
   <div id="C4"></div>
   </div>
   `;
-  
-  const B2=new dhx.Layout("C4",{
-    height:"content",
-   
-    cols:[
-      {
-        id:"B2C1",
-        html:"<div id='BC1'></div>",
-            
-      },
-      {
-        id:"B2C2",
-        html:"<div id='BC2'></div>",
-        
-  
-      },
-      {
-        id:"B2C3",
-        html:"<div id='BC3'></div>",
-       
-  
-      },
-      {
-        id:"B2C4",
-        html:"<div id='BC4'></div>",
-        
-  
-      },
-    ]
-  });
-  
-  const BC1=document.getElementById("BC1");
-  BC1.innerHTML=`<div class="pa">
-  <p style="margin:0; font-size:20px";>End-user Happiness</p>
-  <p style="margin:0; color:red; font-size:16px";>upto</p>
-  <h1> 98.44% </h1>
-  </div>
-  `;
-  
-  const BC2=document.getElementById("BC2");
-  BC2.innerHTML=`<div class="pa">
-  <p style="margin:0; font-size:20px";>First-Go Pass Rate</p>
-  <p style="margin:0; color:red; font-size:16px";>upto</p>
-  <h1> 98.6% </h1>
-  </div>
-  `;
-  const BC3=document.getElementById("BC3");
-  BC3.innerHTML=`<div class="pa">
-  <p style="margin:0; font-size:20px";>Verified Identities</p>
-  <p style="margin:0; color:red; font-size:16px";>upto</p>
-  <h1> 20M + </h1>
-  </div>
-  `;
-  const BC4=document.getElementById("BC4");
-  BC4.innerHTML=`<div class="pa">
-  <p style="margin:0; font-size:20px";>Reduce compliance <br>violations</p>
-  <p style="margin:0; color:red; font-size:16px";>upto</p>
-  <h1> 60% </h1>
-  </div>
-  `;
+  const config = {
+    type: "donut",
+    css: "char",
+    series: [
+        {
+            value: "value",
+            color: "color",
+            text: "month"
+        }
+    ],
+    legend: {
+        values: {
+            text: "id",
+            color: "color"
+        },
+        halign: "right",
+        valign: "top"
+    }
+};
+
+const chart = new dhx.Chart("C4", config);
+const pieData = [
+  { id: "Jan", value: 1400, color: "#394E79", month: "Jan" },
+  { id: "Feb", value: 2200, color: "#5E83BA", month: "Feb" },
+  { id: "Mar", value: 3210, color: "#C2D2E9", month: "Mar" },
+  { id: "Apr", value: 4225, color: "#9A8BA5", month: "Apr" },
+  { id: "May", value: 5259, color: "#E3C5D5", month: "May" }
+];
+chart.data.parse(pieData);
 
 //const layout1con=layoutCont;
 function AddWidgets(id) {
