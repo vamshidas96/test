@@ -89,8 +89,8 @@ tab.events.on("change", function(id, prev){
   const B1=document.getElementById('B1');
 B1.innerHTML=`<div class="box">
 <div class="content">
-<h1 style='font-size:25px';> IDENTITY VERIFICATION<br><br>
-TO ACCELERATE TRUST<br><br>
+<h1 style='font-size:30px';> IDENTITY VERIFICATION<br>
+TO ACCELERATE TRUST<br>
 WORLDWIDE</h1>
 <h3>Unleash the power of AI-driven identity verification solutions that<br>
  surpass traditional KYC & AML checks to boost conversions by <br>deterring fraud and ensuring global compliance.</h3>

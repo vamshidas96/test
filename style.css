@@ -72,6 +72,10 @@ margin-right: 120px; */
   flex: 1; /* Take up remaining space */
 }
 
+.content h1{
+  line-height: 1.5;
+}
+
 .image {
   flex-shrink: 0; 
   margin-left: 20px; 
