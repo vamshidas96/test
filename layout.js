@@ -214,7 +214,9 @@ B3C11.innerHTML=`<div class="pa">
 <h4>Verify and onboard every<br>
 legitimate customer<br>
 seamlessly.</h4>
-<img src="pic1.jpg" alt="logo" style="border-radius:8px"; >
+<div class="image-container">
+<img src="pic1.jpg" alt="logo" style="border-radius:8px";>
+</div>
 </div>
 `;
 
@@ -224,8 +226,9 @@ B3C22.innerHTML=`<div class="pa">
 <h4>Go beyond basic verification<br>
 for comprehensive compliance<br>
 checks & risk assessments</h4>
+<div class="image-container">
 <img src="pic2.jpg" alt="logo" style="border-radius:8px"; >
-
+</div>
 </div>
 `;
 
@@ -235,8 +238,9 @@ B3C33.innerHTML=`<div class="pa">
 <h4>Integration without complex<br>
 development, saving time and<br>
 resources.</h4>
+<div class="image-container">
 <img src="pic3.jpg" alt="logo" style="border-radius:8px";>
-
+</div>
 </div>
 `;
 
@@ -246,8 +250,9 @@ B3C44.innerHTML=`<div class="pa">
 <h4>Achieve 99% accuracy with<br>
 10,000+ ID types, 150<br>
 languages, and 230+ countries</h4>
-<img src="pic4.jpg" alt="logo" style="border-radius:8px"; width="auto">
-
+<div class="image-container">
+<img src="pic4.jpg" alt="logo" style="border-radius:8px"; >
+</div>
 </div>
 `;
 
