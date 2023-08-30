@@ -82,15 +82,29 @@ margin-top: 80px;
 }
 
 #BC1,
-#BC2,#BC3 ,#BC4, #B3C11,#B3C22,#B3C33,#B3C44
+#BC2,#BC3 ,#BC4 
 {
-  background-color: #d8eafc; /* Apply desired text color to the columns */
+  background-color: #d8eafc; 
   margin-right: 12px;
   margin-left: 35px;
   margin-bottom: 17px;
   margin-top: 10px;
   box-shadow:0px 3px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  height: 180px;
+
+
+}
+#B3C11,#B3C22,#B3C33,#B3C44
+{
+background-color: #d8eafc; 
+margin-right: 12px;
+margin-left: 35px;
+margin-bottom: 17px;
+margin-top: 10px;
+box-shadow:0px 3px 6px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+height: 380px;
 
 
 }
