@@ -293,33 +293,53 @@ scal.data.parse(companiesData);
       const layout1Content = document.getElementById('B1');
       layout1Content.innerHTML="";
       layout1Content.innerHTML=`<div class="aboutus">
-      <h1 style="color:#19162d;">About PVS</h1>
-      <div class="Min">PVS is founded & lead by professionals who are among
-       the most experienced in the global screening industry. 
-       Having served Fortune 500 clients for almost a decade, 
-       our team has diverse experience in running screening operations across India 
-       and we represent 152 countries professionals working to deliver background checks
-        and investigation solutions worldwide.</div>
+      <h1 style="color:#19162d;">About ITXH</h1>
+      <div class="Min">We are an innovative IT services company that has been
+       helping clients all over the world achieve their business objectives through 
+       cutting-edge technology solutions. With our team of experts, we provide end-to-end 
+       services that encompass everything from application development to maintenance and 
+       support.
+<br>
+<br>
+      We understand that every business is unique, and that's why we tailor our services
+       to meet the specific needs of our clients. Our team takes a collaborative approach 
+       to ensure that we fully understand your business objectives, and we work together 
+       to deliver customized solutions that are scalable, reliable, and cost-effective. 
+       We believe that innovation is the key to success, and that's why we invest heavily 
+       in research and development. Our team stays up-to-date with the latest technology 
+       trends and techniques, ensuring that we always provide our clients with cutting-edge
+        solutions that help them stay ahead of the curve.
+      <br>
+      <br>
+      Our dedication to quality and customer satisfaction is unmatched. We take pride 
+      in our work, and we are committed to delivering exceptional results that exceed 
+      our clients' expectations. We believe that the success of our clients is the success
+       of our company, and we are passionate about helping our clients achieve their 
+       business objectives.
+       <br><br>
+       Whether you are a small business or a large enterprise, we have the expertise and 
+       experience to deliver the solutions you need. So, partner with us today and 
+       discover how we can help you achieve your business objectives through innovative
+        IT services that are tailored to your needs.
+<br><br>
+       We offer expertise in Enterprise solutions, Mobile application (iOS & Android) 
+       development, UI/UX product design, Cloud Solutions and Software Product Assessment
+        & Implementation. So long, we have forayed into multiple industries. Currently, 
+        we have a team of highly skilled IT professionals that work round the clock to 
+        ensure us to stay true to our offerings & commitments. Our highly skilled team 
+        includes solution architects, enterprise application developers, web developers, 
+        mobile app developers and software testers..
+       </div>
         <br>
-        <h1 style="color:#19162d;">PVS Foundation Philosophy</h1>
+        <h1 style="color:#19162d;">Our Mission</h1>
         <div class="Min">
-        At PVS we provide authentic results which are gathered and submitted 
-        to our clients each day. This physical, daily, in-person research effort 
-        has differentiated our firm from competitors since it gives our clients 
-        certain evidence from the original public record or source file itself. 
-        Unquestionably, our firm's established history is defined by our approach 
-        toward daily, legal compliance, ethical conduct, accurate, reliable, and 
-        timely background screening results. You may have many vendors to choose 
-        from, at first glance, we may all appear to be the same. Upon closer 
-        inspection you will find what sets PVS Verification apart, our philosophy is 
-        very simple we just deliver what everyone else has promised. 
-        The difference you expect quality and relationships that last.
-Scrutiny with a commitment to accuracy each employment background check 
-undergoes extensive assurance measures. We have adapted a pre employment 
-screening methodology based upon our unique industry expertise protecting your company,
- employees and clients from personal and financial risk. Timely Employment Background 
- Checks 94.6% of pre employment screening reports are completed within 7-10 business
-  days allowing you to make qualified decision quickly and easily.
+        Uniting professionals to achieve success through lasting personal relationships.
+        </div>
+        <br>
+        <h1 style="color:#19162d;">Our Vision</h1>
+        <div class="Min">
+        Let us deliver solutions with long-lasting positive impact on Customers' Businesses.
+
         </div>
 
         </div>`;
