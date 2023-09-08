@@ -148,7 +148,6 @@ function AddWidgets(id) {
     if (id === "logout") {
         sessionStorage.removeItem("username");
         window.location.href="index.html";
-      layout1Content.innerHTML = `<h1>Login Form</h1>`;
     } else if (id==="viewA") {
       layout.removeCell("R3");
       App.viewA();
