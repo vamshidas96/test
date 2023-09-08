@@ -57,7 +57,8 @@ export class Widget{
             submit: true,
             size: "medium",
             view: "flat",
-            color: "primary"
+            color: "primary",
+            
           },
         ]
       });
@@ -136,11 +137,14 @@ export class Widget{
           {
             type: "input",
             label: "Mobile Number",
+            inputType:"number",
             placeholder: "",
             validation: function(value) {
               // Add your validation logic here
-              return true; // Modify validation criteria as needed
+              return /^\d{10}$/.test(value); // Modify validation criteria as needed
             },
+            errorMessage:"Enter correct Mobile Number",
+            successMessage:"",
             name: "mobileNumber",
           },
           {
@@ -158,6 +162,7 @@ export class Widget{
           {
             type: "input",
             label: "Password",
+            inputType:"password",
             placeholder: "",
             validation: function(value) {
               // Add your password validation logic here
@@ -282,5 +287,41 @@ const conf={
 const scal=new dhx.Chart("scal",conf);
 scal.data.parse(companiesData);
 
+    }
+
+    AboutUs(){
+      const layout1Content = document.getElementById('B1');
+      layout1Content.innerHTML="";
+      layout1Content.innerHTML=`<div class="aboutus">
+      <h1 style="color:#19162d;">About PVS</h1>
+      <div class="Min">PVS is founded & lead by professionals who are among
+       the most experienced in the global screening industry. 
+       Having served Fortune 500 clients for almost a decade, 
+       our team has diverse experience in running screening operations across India 
+       and we represent 152 countries professionals working to deliver background checks
+        and investigation solutions worldwide.</div>
+        <br>
+        <h1 style="color:#19162d;">PVS Foundation Philosophy</h1>
+        <div class="Min">
+        At PVS we provide authentic results which are gathered and submitted 
+        to our clients each day. This physical, daily, in-person research effort 
+        has differentiated our firm from competitors since it gives our clients 
+        certain evidence from the original public record or source file itself. 
+        Unquestionably, our firm's established history is defined by our approach 
+        toward daily, legal compliance, ethical conduct, accurate, reliable, and 
+        timely background screening results. You may have many vendors to choose 
+        from, at first glance, we may all appear to be the same. Upon closer 
+        inspection you will find what sets PVS Verification apart, our philosophy is 
+        very simple we just deliver what everyone else has promised. 
+        The difference you expect quality and relationships that last.
+Scrutiny with a commitment to accuracy each employment background check 
+undergoes extensive assurance measures. We have adapted a pre employment 
+screening methodology based upon our unique industry expertise protecting your company,
+ employees and clients from personal and financial risk. Timely Employment Background 
+ Checks 94.6% of pre employment screening reports are completed within 7-10 business
+  days allowing you to make qualified decision quickly and easily.
+        </div>
+
+        </div>`;
     }
 }

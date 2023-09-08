@@ -107,7 +107,7 @@ B1.innerHTML=`<div class="box">
 
 const BR1=document.getElementById("B2");
 BR1.innerHTML=`<div class="B2">
-<h1 style="text-align:center";>DRIVING TRUST GLOBALLY WITH SHUFTI PRO</h1>
+<h1 style="text-align:center";>DRIVING TRUST GLOBALLY WITH ITXH</h1>
 <div id="C4"></div>
 </div>
 `;
@@ -175,8 +175,8 @@ BC4.innerHTML=`<div class="pa">
 
 const BR2=document.getElementById("B3");
 BR2.innerHTML=`<div class="B3">
-<h1 style="text-align:center";>SHUFTI PRO'S UNIQUE IDENTITY<br><br>VERIFICATION BENEFITS</h1>
-<h2 style="text-align:center";>Shufti Pro's industry leading KYC, KYB and AML compliance <br> solutions provide the greatest global coverage, speed and <br> accuracy for verifying your customer's identity</h2>
+<h1 style="text-align:center";>ITXH's UNIQUE IDENTITY<br><br>VERIFICATION BENEFITS</h1>
+<h2 style="text-align:center";>ITXH's industry leading KYC, KYB and AML compliance <br> solutions provide the greatest global coverage, speed and <br> accuracy for verifying your customer's identity</h2>
 <div id="B3C"></div>
 </div>
 `;
@@ -275,6 +275,11 @@ languages, and 230+ countries</h4>
       layout.removeCell("R3");
       layout.removeCell("R4");
       wid.Growth();
+    }
+    else if(id==="aboutus"){
+      layout.removeCell("R3");
+      layout.removeCell("R4");
+      wid.AboutUs();
     }
     else if (id === "home") {
       location.reload();

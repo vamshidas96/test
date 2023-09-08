@@ -21,6 +21,11 @@ if(sessionStorage.getItem("username")!=null){
             id:"R3",
             html:"<div id='B2'></div>",
             height:"content",
+          },
+          {
+            id:"R4",
+            html:`<hr style="width:1450px;margin-top:50px;">  <p style="margin-left:30px";>Copyright &copy 2017-2023<p>`,
+            height: "content",
           }
           //,{
           //   height:"content",
@@ -49,6 +54,7 @@ if(sessionStorage.getItem("username")!=null){
       views:[
           {id:"dashboard", tab: "Home" },
           {id:"details", tab:"Details"},
+          {id:"profileU", tab:"Profile Upload"},
           { id:"view", tab: "View Application" },
           { id:"status", tab: "Status" },
           { id:"logout",tab: "LogOut" },
@@ -83,9 +89,11 @@ if(sessionStorage.getItem("username")!=null){
     const B1=document.getElementById('B1');
   B1.innerHTML=`<div class="box">
   <div class="content">
-  <h1 style='font-size:30px';> IDENTITY VERIFICATION<br><br>
-  TO ACCELERATE TRUST<br><br>
-  WORLDWIDE</h1>
+  <div class="heading-container">
+  IDENTITY VERIFICATION
+  TO ACCELERATE TRUST
+  WORLDWIDE
+</div>
   <h3>Unleash the power of AI-driven identity verification solutions that<br>
    surpass traditional KYC & AML checks to boost conversions by <br>deterring fraud and ensuring global compliance.</h3>
    </div>
@@ -99,7 +107,7 @@ if(sessionStorage.getItem("username")!=null){
   
   const BR1=document.getElementById("B2");
   BR1.innerHTML=`<div class="B2">
-  <h1 style="text-align:center";>DRIVING TRUST GLOBALLY WITH SHUFTI PRO</h1>
+  <h1 style="text-align:center";>DRIVING TRUST GLOBALLY WITH ITXH</h1>
   <div id="C4"></div>
   </div>
   `;
@@ -177,11 +185,17 @@ function AddWidgets(id) {
       layout.removeCell("R3");
       App.details();
     } 
-    else if (id==="educationalDetails") {
-        layout1Content.innerHTML = `<h1>Registration Educational Details</h1>`;
+    else if (id==="view") {
+      layout.removeCell("R3");
+      App.view();
       }
-      else if (id==="professionalDetails") {
-        layout1Content.innerHTML = `<h1>Registration Professional Details</h1>`;
+      else if (id==="profileU") {
+        layout.removeCell("R3");
+        App.uploadDetails();
+      }
+      else if (id==="status") {
+        layout.removeCell("R3");
+        App.status();
       }
       else if (id === "dashboard") {
       location.reload();

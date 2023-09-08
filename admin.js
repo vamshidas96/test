@@ -21,6 +21,11 @@ if(sessionStorage.getItem("username")==="admin"){
             id:"R3",
             html:"<div id='B2'></div>",
             height:"content",
+          },
+          {
+            id:"R4",
+            html:`<hr style="width:1480px; margin-top:50px;">  <p style="margin-left:30px;">Copyright &copy 2017-2023<p>`,
+            height: "content",
           }
           //,{
           //   height:"content",
@@ -82,9 +87,11 @@ if(sessionStorage.getItem("username")==="admin"){
     const B1=document.getElementById('B1');
   B1.innerHTML=`<div class="box">
   <div class="content">
-  <h1 style='font-size:30px';> IDENTITY VERIFICATION<br><br>
-  TO ACCELERATE TRUST<br><br>
-  WORLDWIDE</h1>
+  <div class="heading-container">
+  IDENTITY VERIFICATION
+  TO ACCELERATE TRUST
+  WORLDWIDE
+</div>
   <h3>Unleash the power of AI-driven identity verification solutions that<br>
    surpass traditional KYC & AML checks to boost conversions by <br>deterring fraud and ensuring global compliance.</h3>
    </div>
@@ -151,6 +158,15 @@ function AddWidgets(id) {
       }
       else if (id==="professionalDetails") {
         layout1Content.innerHTML = `<h1>Registration Professional Details</h1>`;
+      }
+      else if(id==="verifyA"){
+        layout.removeCell("R3");
+        App.verifyA();
+      }
+      else if(id==="viewReport"){
+        layout.removeCell("R3");
+        App.viewReport();
+
       }
       else if (id === "dashboard") {
       location.reload();
