@@ -19,7 +19,7 @@ export class ApplicantWid{
                 {
                     id: "С1",
                     html: `
-          <center>  <h2>Profile Verification Services</h2></center>
+          <center>  <h2>Applicant Details</h2></center>
             <div class="container">
  
 <form id="form">
@@ -333,7 +333,7 @@ view(){
 const applicationDataContainer = document.getElementById('see');
 if (window.formDataObject) {
     const applicationHTML = document.createElement('div');
-    applicationHTML.innerHTML = '<center><h2>Application Data</h2></center>';
+    applicationHTML.innerHTML = '<center><h2>Applicant Data</h2></center>';
 
     // Create a table element
     const table = document.createElement('table');
